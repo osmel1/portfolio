@@ -49,7 +49,9 @@
   margin: auto;
   width: 30%;
 }
-
+.incomplete{
+   display:none;
+}
 
 .shadow_pop_tr{-webkit-animation:shadow_pop_tr .3s cubic-bezier(.47,0.000,.745,.715) both;animation:shadow_pop_tr .3s cubic-bezier(.47,0.000,.745,.715) both}
 /* ----------------------------------------------
