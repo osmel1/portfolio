@@ -1,0 +1,62 @@
+
+.all{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+  background: linear-gradient(
+    to top,
+    #d5d4d9 0%,
+    #d5d4d9 90%,
+    rgb(255, 255, 255) 90%,
+    rgb(255, 255, 255) 100%
+  );
+  padding-left: 2%;
+}
+.aboutMe{
+    font-size: 70px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.bio{
+    font-size:30px;
+    font-weight: bold;
+     margin-left: 20px;
+    margin-right: 20px;
+
+}
+.normalLinks{
+    font-weight: bold;
+color: rgb(97, 161, 161);
+}
+
+.textdecoNone{
+text-decoration: none;
+color: rgb(97, 161, 161);
+margin-top:10px ;
+margin-left: 10px;
+font-size: 20px;
+font-weight: 500;
+}
+.marginBottom{
+    margin-bottom: 10px;
+}
+.marginTop{
+    margin-top: 10px;
+}
+.twoZone{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.firstOne{
+    flex :2;
+    padding-right: 20px;
+    
+}
+.secondOne{
+    flex:3;
+}
+

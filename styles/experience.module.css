@@ -1,0 +1,100 @@
+.Experience{
+    height: 100vh;
+    background: linear-gradient(
+    to top,
+    #d5d4d9 0%,
+    #d5d4d9 92%,
+    rgb(255, 255, 255) 92%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.title {
+    font-size: 6vw;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.cardNsep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card{
+    position: relative;
+    width: 25rem;
+    border-bottom: 1px rgb(77, 73, 73) solid;
+}
+.card:last-child{
+    border-bottom: 0px black solid;
+}
+
+
+.cardDate{
+    color: #f0f2f6;
+    position: absolute;
+    z-index: 1;
+    top: -2rem;
+    left: -2rem;
+}
+
+.dot {
+    position: absolute;
+    bottom: 4.5rem;
+    /* padding-top: -10px; */
+    height: 17px;
+    width: 17px;
+    background-color: #07ba82;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.seperator{
+    border-left: 3px solid #eef0f3;
+    height: 5rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 6vw;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .cardDate {
+    top: -1.2rem;
+  }
+  .dot {
+    bottom: 2.6rem;
+    padding-top: -50px;
+  }
+  .seperator {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 8vw;
+  }
+  .cardDate {
+    top: -1.1rem;
+  }
+  .dot {
+    bottom: 1rem;
+    padding-top: -10px;
+  }
+  .seperator {
+    height: 1.5rem;
+  }
+}
