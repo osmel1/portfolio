@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.allOfall{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /* padding-left: 10px; */
+    background-color: rgb(241, 238, 243);
+}
+.all{
+    margin-right: auto;
+}
+.container{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+}
+
+.first{
+    background-color: rgb(222, 216, 230);
+    width: 30%;
+    height: 20VH;
+    z-index: 10;
+    border-radius: 10px;
+    color: rgb(31, 20, 129);
+    border: 2px black solid;
+}
+.second{
+        /* background-color: blueviolet; */
+        border-top: 5px black solid;         
+        width: 20%;
+        height: 4VH;
+       position: relative;
+       margin-top: 14vh;
+}
+.allOfall h1{
+    text-align: center;
+}
+.third{
+    background-color: rgb(31, 20, 129);
+        width: 30%;
+        height: 20VH;
+        margin-top: 6%;
+    z-index: 10;
+    border-radius: 10px;
+    color: rgb(10, 9, 12);
+    border: 2px black solid;
+}
+.fourth{
+    border-top: 5px black solid;         
+    border-left: 5px black solid;         
+    width: 35%;
+    height: 60px;
+    margin-left: 25%;
+    position: relative; 
+        top:-29px;
+        right: -2%;
+
+} 
+
+hr{
+    margin-left: 25%;
+}
+.container-second{
+    margin: AUTO auto;
+    width: 100vw;
+     display: flex;
+    justify-content: center;
+
+}
+.container-second .first{
+       position: relative; 
+        top:-30px;
+}
+.third p{
+    color: rgb(220, 232, 243);
+    
+}

@@ -36,14 +36,18 @@
     margin-bottom:0 ;
 }
 
-.nav li p {
-    color: #fff;
+.active{
     display: inline;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
     margin-right: 25px;
     margin-bottom: 0%;
+        transition: 0.4s;
+}
+.nav li p:hover{
+    letter-spacing: 0.4rem;
+    transition: 0.4s;
 }
 
 
@@ -51,4 +55,10 @@
     display: flex;
     flex-direction: column;
     color: aqua;
+}
+.active{
+   text-decoration: line-through;
+}
+.nonActive{
+    color: #4c62dd;
 }

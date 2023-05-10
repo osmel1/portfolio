@@ -9,12 +9,7 @@ import { AiFillFacebook,AiFillInstagram,AiFillGithub } from "react-icons/ai";
 
 export default function Navbar() {
  const router = useRouter();
-  const [isCollapsed, setIsCollapsed] = useState(true); // Added state for collapse icon
-
-  // Function to handle click on collapse icon
-  const handleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+ const currentRouter= router.pathname;
 
   return (
     <div className={styles.all}>
@@ -34,8 +29,8 @@ export default function Navbar() {
             return (
               <>
               <li key={index}>
-                <Link href={link.path} className={`navbar-toggler ${isCollapsed ? '' : 'collapsed'}`}>
-                  <p key={index}>{link.name}</p>
+                <Link href={link.path} >
+                  <p key={index} className={currentRouter === link.path ? styles.active : styles.nonActive}>{link.name}</p>
                 </Link>
               </li>
               </>
@@ -43,9 +38,18 @@ export default function Navbar() {
         })}
         </div>
         <div>
-          <li><a href="https://web.facebook.com/" target="_blank" ><AiFillFacebook color="white" size={20}/></a></li>
-          <li><a href="https://instagram.com/" target="_blank"><AiFillInstagram color="white" size={20}/></a></li>
-          <li><a href="https://github.com/" ><AiFillGithub color="white" size={20}/></a></li>
+          <li><a href="https://web.facebook.com/" target="_blank" ><AiFillFacebook color="blue" size={20}
+           onMouseOver={({target})=>target.style.color="white"}
+          onMouseOut={({target})=>target.style.color="blue"}
+          /></a></li>
+          <li><a href="https://instagram.com/" target="_blank"><AiFillInstagram  size={20}
+           onMouseOver={({target})=>target.style.color="white"}
+    onMouseOut={({target})=>target.style.color="black"}
+          /></a></li>
+          <li><a href="https://github.com/" ><AiFillGithub  size={20}
+           onMouseOver={({target})=>target.style.color="white"}
+    onMouseOut={({target})=>target.style.color="black"}
+          /></a></li>
         </div>
       </ul>
     

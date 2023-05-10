@@ -1,4 +1,6 @@
 :root {
+  --purple: rgb(97, 161, 161);
+  --white: #e3e1ec;
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',

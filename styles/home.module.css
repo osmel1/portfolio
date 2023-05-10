@@ -1,23 +1,30 @@
 .all{
-   background-color: rgb(192, 223, 250);
+   background-color: var(--purple);
+   height: 100vh;
 }
 .personal_image img{
   display: flex;
   border-radius: 50%;
   flex-direction: column;
-
+  position: relative;
+  top: -11%;
 }
 .bioPara{
-  background-color: rgb(52, 54, 56);
+ 
   border-radius: 20px;
   padding: 10px;
   display: none;
+
 }
 
 
 .professions{
   display: flex;
   flex-direction: column;
+}
+.professions h1{
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 
 .header_main{
@@ -30,6 +37,9 @@
 .bio{
   margin-right: 10%;
   margin-left: 10%;
+   background-color: var(--white);
+   padding: 20px;
+   border-radius: 10px;
 }
 .bio h1{
   margin: 0px;
