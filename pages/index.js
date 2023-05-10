@@ -33,7 +33,11 @@ export default function Home() {
           <p>Hi, My name is </p>
           <h1>ELHACHIMI Oussama</h1>
           <div className={style.bioContent}>
+<<<<<<< HEAD
           {/* <button onClick={handleClick}> See More</button> */}
+=======
+          <button className={style.incomplete} onClick={handleClick}> See More</button>
+>>>>>>> 8ab68217718507223aa098ff4848c9f1ffe1374d
           <p  className={`.bioPara ${isClicked ? 'active' : ''}`}>
             I have the passion for using data to solve problems, and I'm highly skilled and experienced in this field. As someone who loves working with data, I enjoy the process of gathering and analyzing complex data sets.
           </p>
